@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.links {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
+}
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: aside;
+}
+.item4 {
+  grid-area: footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "menu menu aside aside aside"
+    "menu menu footer footer footer";
+  grid-gap: 10px;
+  background-color: #2196f3;
+}
+.grid-container > div {
+  background-color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
